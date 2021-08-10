@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'PT Serif', serif;
+}
+
+header {
+    height: 5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    color: blue;
+    margin: 0.2em;
+    padding: 0.5em;
+
+    li {
+        display: inline;
+        margin: 0.5em;
+    }
+}
+
+nav {
+    margin: 0.5em;
+    padding: 0.3em;
+
+    ul {
+        background-color: white;
+        height: 5vh;
+        border-style: solid;
+        border-color: blue;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+main {
+    .paginaPrincipal {
+        margin: 1em;
+        align-items: center;
+        height: 80vh;
+        background-color: blue;
+
+        h5 {
+            color: white;
+            font-size: 2em;
+            background-color: rgba(128, 128, 128, 0.185);
+        }
+    }
+
+    margin: 0.2em;
+    padding: 0.5em;
+
+    .paginaNosotros {
+        background-color: red;
+        height: 80vh;
+        display: grid;
+        grid-template-areas: 
+        "blanco blanco blanco blanco"
+        "nosotros blanco blanco blanco"
+        "blanco blanco blanco blanco"
+        "texto blanco blanco imagen"
+        "blanco blanco blanco imagen"
+        ;
+
+        .blanco{
+            grid-area: blanco;
+        }
+    }
+
+    .paginaServicios {
+        background-color: chocolate;
+        height: 80vh;
+    }
+
+    .paginaContacto {
+        background-color: cornflowerblue;
+        height: 80vh;
+    }
+}
+
+footer {
+    background-color: darkgray;
+    height: 5vh;
+}
