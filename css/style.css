@@ -1,16 +1,19 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
-  font-family: 'PT Serif', serif; }
+  font-family: 'Montserrat', sans-serif;
+  color: blue;
+  background-color: #F2F2F2; }
 
 header {
-  height: 5vh;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  align-items: baseline;
   justify-content: flex-end;
   align-content: center;
   color: blue;
@@ -18,13 +21,13 @@ header {
   padding: 0.5em; }
   header li {
     display: inline;
-    margin: 0.5em; }
+    margin: 0.5em;
+    font-size: 1em; }
 
 nav {
   margin: 0.5em;
   padding: 0.3em; }
   nav ul {
-    background-color: white;
     height: 5vh;
     border-style: solid;
     border-color: blue;
@@ -37,29 +40,131 @@ nav {
 main {
   margin: 0.2em;
   padding: 0.5em; }
-  main .paginaPrincipal {
-    margin: 1em;
+  main .paginaPrincipal h2 {
+    position: relative;
+    font-size: 3em;
+    color: blue;
+    align-content: center;
+    background-color: transparent; }
+  main .paginaPrincipal .conocenosPaginaprincipal {
+    background-image: url(file:///Users/anahicamarero/Desktop/Coder%20House/Desarrollo%20Web/volquetesQuilmesEntregaFinal/imagenesVolquetesQuilmes/Foto3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    margin: 0.2em;
+    padding: 0.5em; }
+    main .paginaPrincipal .conocenosPaginaprincipal img {
+      position: relative;
+      background-color: transparent;
+      top: 30%; }
+  main .nosotrosPrincipal .tituloNosotrosPrincipal {
+    font-size: 3em;
+    text-align: center; }
+  main .nosotrosPrincipal .textoNosotrosPrincipal {
+    font-size: 2em;
     align-items: center;
-    height: 80vh;
-    background-color: blue; }
-    main .paginaPrincipal h5 {
-      color: white;
-      font-size: 2em;
-      background-color: rgba(128, 128, 128, 0.185); }
-  main .paginaNosotros {
-    background-color: red;
-    height: 80vh;
-    display: grid;
-    grid-template-areas: "blanco blanco blanco blanco" "nosotros blanco blanco blanco" "blanco blanco blanco blanco" "texto blanco blanco imagen" "blanco blanco blanco imagen"; }
-    main .paginaNosotros .blanco {
-      grid-area: blanco; }
-  main .paginaServicios {
-    background-color: chocolate;
-    height: 80vh; }
-  main .paginaContacto {
-    background-color: cornflowerblue;
-    height: 80vh; }
+    text-align: center;
+    margin: auto; }
+  main .paginaPrecios .tituloPaginaPrecios {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em; }
+  main .paginaPrecios .cardsPrecios {
+    height: 60%; }
 
-footer {
-  background-color: darkgray;
-  height: 5vh; }
+.nosotrosPagina .estructuraNosotros {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "titulo titulo titulo" "descripcion1 descripcion1 descripcion1" "imagenNosotros imagenNosotros descripcion2" "imagenNosotros imagenNosotros descripcion3" "descripcion4 descripcion4 descripcion4"; }
+  .nosotrosPagina .estructuraNosotros .titulo {
+    margin: auto;
+    grid-area: titulo;
+    text-align: center;
+    align-items: center;
+    color: blue;
+    font-size: 30px; }
+  .nosotrosPagina .estructuraNosotros .textoComplementario1 {
+    grid-area: descripcion1;
+    margin: 5px;
+    padding: 2px;
+    width: 80vw; }
+  .nosotrosPagina .estructuraNosotros .imagenesNosotros {
+    grid-area: imagenNosotros;
+    background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: flex-end;
+    width: 50vw;
+    height: 40vh;
+    margin: 5px; }
+  .nosotrosPagina .estructuraNosotros .textoComplementario2 {
+    margin: 5px;
+    grid-area: descripcion2;
+    width: 30vw; }
+  .nosotrosPagina .estructuraNosotros .textoComplementario3 {
+    grid-area: descripcion3;
+    width: 30vw; }
+  .nosotrosPagina .estructuraNosotros .textoComplementario4 {
+    grid-area: descripcion4;
+    width: 80vw; }
+
+@media (min-width: 351px) and (max-width: 516px) {
+  /* pantalla pequeña*/
+  header li {
+    font-size: 0.5em; }
+  main .paginaPrincipal h2 {
+    font-size: 1.5em; }
+  main .nosotrosPrincipal .tituloNosotrosPrincipal {
+    font-size: 1em; }
+  main .nosotrosPrincipal .textoNosotrosPrincipal {
+    font-size: 1em; }
+  main .paginaPrecios .tituloPaginaPrecios {
+    font-size: 1em; }
+  .nosotrosPagina .estructuraNosotros {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "titulo " "descripcion1 " "imagenNosotros" "descripcion2" "descripcion3" "descripcion4"; }
+    .nosotrosPagina .estructuraNosotros .titulo {
+      margin: auto;
+      grid-area: titulo;
+      text-align: center;
+      align-items: center;
+      color: blue;
+      font-size: 30px;
+      width: 100%; }
+    .nosotrosPagina .estructuraNosotros .textoComplementario1 {
+      grid-area: descripcion1;
+      margin: 5px;
+      padding: 2px;
+      width: 100%; }
+    .nosotrosPagina .estructuraNosotros .imagenesNosotros {
+      grid-area: imagenNosotros;
+      background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-items: flex-end;
+      margin: 5px;
+      width: 100%; }
+    .nosotrosPagina .estructuraNosotros .textoComplementario2 {
+      grid-area: descripcion2;
+      margin: 5px;
+      width: 100%; }
+    .nosotrosPagina .estructuraNosotros .textoComplementario3 {
+      grid-area: descripcion3;
+      margin: 5px;
+      width: 100%; }
+    .nosotrosPagina .estructuraNosotros .textoComplementario4 {
+      grid-area: descripcion4;
+      margin: 5px;
+      width: 100%; } }
+
+@media (min-width: 517px) and (max-width: 980px) {
+  /*Dispositivo LARGE*/ }
+
+@media (min-width: 981px) and (max-width: 10000px) {
+  /*Dispositivo Extra large*/ }
