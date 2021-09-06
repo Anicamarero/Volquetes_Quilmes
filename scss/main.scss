@@ -20,7 +20,11 @@
     margin: 0.2em;
     padding: 0.5em;
 
-    li {
+    .tituloHeader {
+        font-size: 3rem;
+    }
+
+    .postTitulo {
         display: inline;
         margin: 0.5em;
         font-size: 1rem;
@@ -40,6 +44,10 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        .navegadortexto {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -49,14 +57,6 @@
     padding: 0.5em;
 
     .paginaPrincipal {
-
-        h2 {
-            position: relative;
-            font-size: 3rem;
-            color: blue;
-            align-content: center;
-            background-color: transparent;
-        }
 
         .conocenosPaginaprincipal {
             background-image: url(file:///Users/anahicamarero/Desktop/Coder%20House/Desarrollo%20Web/volquetesQuilmesEntregaFinal/imagenesVolquetesQuilmes/Foto3.jpg);
@@ -101,75 +101,7 @@
         }
 
         .cardsPrecios {
-            height: 60%;
-        }
-    }
-}
-
-.nosotrosPagina {
-
-    .tituloVolquetes {
-        position: relative;
-        font-size: 10rem;
-        color: blue;
-        align-content: center;
-        background-color: transparent;
-    }
-
-    .estructuraNosotros {
-        margin-left: 20px;
-        margin-right: 20px;
-        display: grid;
-        align-items: center;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "descripcion1 descripcion1 descripcion1"
-            "imagenNosotros imagenNosotros descripcion2"
-            "imagenNosotros imagenNosotros descripcion3"
-            "descripcion4 descripcion4 descripcion4"
-        ;
-
-        .titulo {
-            margin: auto;
-            grid-area: titulo;
-            text-align: center;
-            align-items: center;
-            color: blue;
-            font-size: 30rpx;
-        }
-
-        .textoComplementario1 {
-            grid-area: descripcion1;
-            margin: 5px;
-            padding: 2px;
-            width: 80vw;
-        }
-
-        .imagenesNosotros {
-            grid-area: imagenNosotros;
-            background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            align-items: flex-end;
-            width: 50vw;
-            height: 40vh;
-            margin: 5px;
-        }
-
-        .textoComplementario2 {
-            margin: 5px;
-            grid-area: descripcion2;
-            width: 30vw;
-        }
-
-        .textoComplementario3 {
-            grid-area: descripcion3;
-            width: 30vw;
-        }
-
-        .textoComplementario4 {
-            grid-area: descripcion4;
-            width: 80vw;
+            height: 70%;
         }
     }
 }
@@ -177,23 +109,27 @@
 @media (min-width: 0px) and (max-width:516px) {
     /* pantalla pequeña*/
 
-    header {
-        li {
-            font-size: 0.5rem;
+    .headerPagina {
+
+        .tituloHeader {
+            font-size: 2rem;
+        }
+
+        .contactoHeader {
+            display: flex;
+
+            .postTitulo {
+                font-size: .75rem;
+            }
         }
     }
 
-    main {
-
-        .paginaPrincipal {
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
+    .inicioPagina {
 
         .nosotrosPrincipal {
+
             .tituloNosotrosPrincipal {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
 
             .textoNosotrosPrincipal {
@@ -202,74 +138,14 @@
         }
 
         .paginaPrecios {
+
             .tituloPaginaPrecios {
                 font-size: 1rem;
             }
+
         }
     }
 
-    .nosotrosPagina {
-        .estructuraNosotros {
-            margin-left: 20px;
-            margin-right: 20px;
-            display: grid;
-            align-items: center;
-            grid-template-areas:
-                "titulo "
-                "descripcion1 "
-                "imagenNosotros"
-                "descripcion2"
-                "descripcion3"
-                "descripcion4"
-            ;
-
-            .titulo {
-                margin: auto;
-                grid-area: titulo;
-                text-align: center;
-                align-items: center;
-                color: blue;
-                font-size: 2rem;
-                width: 100%;
-            }
-
-            .textoComplementario1 {
-                grid-area: descripcion1;
-                margin: 5px;
-                padding: 2px;
-                width: 100%;
-            }
-
-            .imagenesNosotros {
-                grid-area: imagenNosotros;
-                /*  background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                align-items: flex-end;*/
-                margin: 5px;
-                width: 100%;
-            }
-
-            .textoComplementario2 {
-                grid-area: descripcion2;
-                margin: 5px;
-                width: 100%;
-            }
-
-            .textoComplementario3 {
-                grid-area: descripcion3;
-                margin: 5px;
-                width: 100%;
-            }
-
-            .textoComplementario4 {
-                grid-area: descripcion4;
-                margin: 5px;
-                width: 100%;
-            }
-        }
-
-    }
 }
 
 @media (min-width: 517px) and (max-width:980px) {

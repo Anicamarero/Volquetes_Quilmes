@@ -9,7 +9,7 @@
   color: blue;
   background-color: #F2F2F2; }
 
-header {
+.headerPagina {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -19,15 +19,17 @@ header {
   color: blue;
   margin: 0.2em;
   padding: 0.5em; }
-  header li {
+  .headerPagina .tituloHeader {
+    font-size: 3rem; }
+  .headerPagina .postTitulo {
     display: inline;
     margin: 0.5em;
-    font-size: 1em; }
+    font-size: 1rem; }
 
-nav {
+.navegadorPagina {
   margin: 0.5em;
   padding: 0.3em; }
-  nav ul {
+  .navegadorPagina ul {
     height: 5vh;
     border-style: solid;
     border-color: blue;
@@ -36,17 +38,13 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
+    .navegadorPagina ul .navegadortexto {
+      font-size: 1rem; }
 
-main {
+.inicioPagina {
   margin: 0.2em;
   padding: 0.5em; }
-  main .paginaPrincipal h2 {
-    position: relative;
-    font-size: 3em;
-    color: blue;
-    align-content: center;
-    background-color: transparent; }
-  main .paginaPrincipal .conocenosPaginaprincipal {
+  .inicioPagina .paginaPrincipal .conocenosPaginaprincipal {
     background-image: url(file:///Users/anahicamarero/Desktop/Coder%20House/Desarrollo%20Web/volquetesQuilmesEntregaFinal/imagenesVolquetesQuilmes/Foto3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -54,114 +52,39 @@ main {
     height: 80vh;
     margin: 0.2em;
     padding: 0.5em; }
-    main .paginaPrincipal .conocenosPaginaprincipal img {
+    .inicioPagina .paginaPrincipal .conocenosPaginaprincipal img {
       position: relative;
       background-color: transparent;
       top: 30%; }
-  main .nosotrosPrincipal .tituloNosotrosPrincipal {
-    font-size: 3em;
+  .inicioPagina .nosotrosPrincipal .tituloNosotrosPrincipal {
+    font-size: 3rem;
     text-align: center; }
-  main .nosotrosPrincipal .textoNosotrosPrincipal {
-    font-size: 2em;
+  .inicioPagina .nosotrosPrincipal .textoNosotrosPrincipal {
+    font-size: 2rem;
     align-items: center;
     text-align: center;
     margin: auto; }
-  main .paginaPrecios .tituloPaginaPrecios {
-    font-size: 2em;
+  .inicioPagina .paginaPrecios .tituloPaginaPrecios {
+    font-size: 2rem;
     text-align: center;
     margin: 1em; }
-  main .paginaPrecios .cardsPrecios {
-    height: 60%; }
+  .inicioPagina .paginaPrecios .cardsPrecios {
+    height: 70%; }
 
-.nosotrosPagina .estructuraNosotros {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: grid;
-  align-items: center;
-  grid-template-areas: "titulo titulo titulo" "descripcion1 descripcion1 descripcion1" "imagenNosotros imagenNosotros descripcion2" "imagenNosotros imagenNosotros descripcion3" "descripcion4 descripcion4 descripcion4"; }
-  .nosotrosPagina .estructuraNosotros .titulo {
-    margin: auto;
-    grid-area: titulo;
-    text-align: center;
-    align-items: center;
-    color: blue;
-    font-size: 30px; }
-  .nosotrosPagina .estructuraNosotros .textoComplementario1 {
-    grid-area: descripcion1;
-    margin: 5px;
-    padding: 2px;
-    width: 80vw; }
-  .nosotrosPagina .estructuraNosotros .imagenesNosotros {
-    grid-area: imagenNosotros;
-    background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: flex-end;
-    width: 50vw;
-    height: 40vh;
-    margin: 5px; }
-  .nosotrosPagina .estructuraNosotros .textoComplementario2 {
-    margin: 5px;
-    grid-area: descripcion2;
-    width: 30vw; }
-  .nosotrosPagina .estructuraNosotros .textoComplementario3 {
-    grid-area: descripcion3;
-    width: 30vw; }
-  .nosotrosPagina .estructuraNosotros .textoComplementario4 {
-    grid-area: descripcion4;
-    width: 80vw; }
-
-@media (min-width: 351px) and (max-width: 516px) {
+@media (min-width: 0px) and (max-width: 516px) {
   /* pantalla pequeña*/
-  header li {
-    font-size: 0.5em; }
-  main .paginaPrincipal h2 {
-    font-size: 1.5em; }
-  main .nosotrosPrincipal .tituloNosotrosPrincipal {
-    font-size: 1em; }
-  main .nosotrosPrincipal .textoNosotrosPrincipal {
-    font-size: 1em; }
-  main .paginaPrecios .tituloPaginaPrecios {
-    font-size: 1em; }
-  .nosotrosPagina .estructuraNosotros {
-    margin-left: 20px;
-    margin-right: 20px;
-    display: grid;
-    align-items: center;
-    grid-template-areas: "titulo " "descripcion1 " "imagenNosotros" "descripcion2" "descripcion3" "descripcion4"; }
-    .nosotrosPagina .estructuraNosotros .titulo {
-      margin: auto;
-      grid-area: titulo;
-      text-align: center;
-      align-items: center;
-      color: blue;
-      font-size: 30px;
-      width: 100%; }
-    .nosotrosPagina .estructuraNosotros .textoComplementario1 {
-      grid-area: descripcion1;
-      margin: 5px;
-      padding: 2px;
-      width: 100%; }
-    .nosotrosPagina .estructuraNosotros .imagenesNosotros {
-      grid-area: imagenNosotros;
-      background-image: url(https://s3.amazonaws.com/storage.wobiz.com/90/90563/images/Large/1516813637_febfe8b937fea4e8276c01b6db70cf99.90563.jpeg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      align-items: flex-end;
-      margin: 5px;
-      width: 100%; }
-    .nosotrosPagina .estructuraNosotros .textoComplementario2 {
-      grid-area: descripcion2;
-      margin: 5px;
-      width: 100%; }
-    .nosotrosPagina .estructuraNosotros .textoComplementario3 {
-      grid-area: descripcion3;
-      margin: 5px;
-      width: 100%; }
-    .nosotrosPagina .estructuraNosotros .textoComplementario4 {
-      grid-area: descripcion4;
-      margin: 5px;
-      width: 100%; } }
+  .headerPagina .tituloHeader {
+    font-size: 2rem; }
+  .headerPagina .contactoHeader {
+    display: flex; }
+    .headerPagina .contactoHeader .postTitulo {
+      font-size: .75rem; }
+  .inicioPagina .nosotrosPrincipal .tituloNosotrosPrincipal {
+    font-size: 1.5rem; }
+  .inicioPagina .nosotrosPrincipal .textoNosotrosPrincipal {
+    font-size: 1rem; }
+  .inicioPagina .paginaPrecios .tituloPaginaPrecios {
+    font-size: 1rem; } }
 
 @media (min-width: 517px) and (max-width: 980px) {
   /*Dispositivo LARGE*/ }
