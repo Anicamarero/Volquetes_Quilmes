@@ -1,11 +1,16 @@
+/*Variables*/
+$colorDetPagina :blue;
+$tipografiaPagina: 'Montserrat',
+sans-serif;
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    color: blue;
+    font-family: $tipografiaPagina;
+    color: $colorDetPagina;
     background-color: #F2F2F2;
 }
 
@@ -16,7 +21,7 @@
     align-items: baseline;
     justify-content: flex-end;
     align-content: center;
-    color: blue;
+    color: $colorDetPagina;
     margin: 0.2em;
     padding: 0.5em;
 
@@ -38,7 +43,7 @@
     ul {
         height: 5vh;
         border-style: solid;
-        border-color: blue;
+        border-color: $colorDetPagina;
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -50,7 +55,6 @@
         }
     }
 }
-
 
 .inicioPagina {
     margin: 0.2em;
@@ -103,6 +107,23 @@
         .cardsPrecios {
             height: 70%;
         }
+    }
+}
+
+.imagenesPagina {
+    .imagenPaginaImagenes1:hover {
+        justify-items: center;
+        width: 80%;
+    }
+
+    .imagenPaginaImagenes2:hover {
+        justify-items: center;
+        width: 80%;
+    }
+
+    .imagenPaginaImagenes3:hover {
+        justify-items: center;
+        width: 80%;
     }
 }
 
