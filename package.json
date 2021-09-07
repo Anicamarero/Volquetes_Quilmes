@@ -16,5 +16,13 @@
     "nodemon": "^2.0.12"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anicamarero/clase_uno_git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anicamarero/clase_uno_git/issues"
+  },
+  "homepage": "https://github.com/Anicamarero/clase_uno_git#readme"
 }

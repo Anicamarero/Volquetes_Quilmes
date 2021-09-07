@@ -43,34 +43,25 @@
       font-size: 1rem; }
 
 .inicioPagina {
-  margin: 0.2em;
-  padding: 0.5em; }
-  .inicioPagina .paginaPrincipal .conocenosPaginaprincipal {
-    background-image: url(file:///Users/anahicamarero/Desktop/Coder%20House/Desarrollo%20Web/volquetesQuilmesEntregaFinal/imagenesVolquetesQuilmes/Foto3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    margin: 0.2em;
-    padding: 0.5em; }
-    .inicioPagina .paginaPrincipal .conocenosPaginaprincipal img {
-      position: relative;
-      background-color: transparent;
-      top: 30%; }
-  .inicioPagina .nosotrosPrincipal .tituloNosotrosPrincipal {
-    font-size: 3rem;
-    text-align: center; }
-  .inicioPagina .nosotrosPrincipal .textoNosotrosPrincipal {
-    font-size: 2rem;
-    align-items: center;
-    text-align: center;
-    margin: auto; }
-  .inicioPagina .paginaPrecios .tituloPaginaPrecios {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1em; }
-  .inicioPagina .paginaPrecios .cardsPrecios {
-    height: 70%; }
+  margin: 0.2em; }
+
+.nosotrosPrincipal .tituloNosotrosPrincipal {
+  font-size: 3rem;
+  text-align: center; }
+
+.nosotrosPrincipal .textoNosotrosPrincipal {
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  margin: auto; }
+
+.paginaPrecios .tituloPaginaPrecios {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1em; }
+
+.paginaPrecios .cardsPrecios {
+  height: 70%; }
 
 .imagenesPagina .imagenPaginaImagenes1:hover {
   justify-items: center;
